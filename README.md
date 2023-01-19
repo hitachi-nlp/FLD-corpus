@@ -36,18 +36,18 @@ This format is similar to the one used in a [previous study](https://github.com/
 ## Current Release
 Datasets can be found [here](...), and their specs are as follows:
 
-| name       | tree depth distribution | arguments         | tree depth | dataset size (train/valid/test) |
-|------------|-------------------------|-------------------|------------|---------------------------------|
-| sFLD-impl  |          skewed         | implication       | $1\sim3$   | 30k / 1k / 1k                   |
-| sFLD-crit  |          skewed         | critical thinking | $1\sim1$   | 30k / 1k / 1k                   |
-| sFLD-axiom |          skewed         | the axioms        | $1\sim3$   | 30k / 1k / 1k                   |
-| FLD.D5     | uniform                 | the axioms        | $1\sim5$   | 30k / 1k / 1k                   |
-| FLD-impl   | uniform                 | implication       | $1\sim3$   | 30k / 1k / 1k                   |
-| **FLD**    | uniform                 | the axioms        | $1\sim3$   | 30k / 1k / 1k                   |
-| **FLD★**   | uniform                 | the axioms        | $1\sim8$   | 30k / 1k / 1k                   |
+| corpus name | proof tree depth distribution | arguments (deduction rules) | proof tree depth | dataset size (train/valid/test) |
+|-------------|-------------------------------|-----------------------------|------------------|---------------------------------|
+| sFLD-impl   |             skewed            | implication                 | $1\sim3$         | 30k / 1k / 1k                   |
+| sFLD-crit   |             skewed            | critical thinking           | $1\sim1$         | 30k / 1k / 1k                   |
+| sFLD-axiom  |             skewed            | the axioms                  | $1\sim3$         | 30k / 1k / 1k                   |
+| FLD.D5      | uniform                       | the axioms                  | $1\sim5$         | 30k / 1k / 1k                   |
+| FLD-impl    | uniform                       | implication                 | $1\sim3$         | 30k / 1k / 1k                   |
+| **FLD**     | uniform                       | the axioms                  | $1\sim3$         | 30k / 1k / 1k                   |
+| **FLD★**    | uniform                       | the axioms                  | $1\sim8$         | 30k / 1k / 1k                   |
 
 See the paper for other details.  
 
 
-In the future, we will release various corpora which differ in relevance aspects, such as the number of distractors, the abundancy of linguistic templates, and the complexity of logical formulas.
-Such corpora will help ablative analysis of these aspects for better corpus design.
+In the future, we will release various corpora which differ in design aspects, such as the number of distractors, the abundancy of linguistic templates, and the complexity of logical formulas.
+Such corpora will enable us to conduct ablative analysis for pursueing better corpus design.
