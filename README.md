@@ -50,4 +50,4 @@ See the paper for other details.
 
 
 In the future, we will release various corpora which differ in design aspects, such as the number of distractors, the abundancy of linguistic templates, and the complexity of logical formulas.
-Such corpora will enable us to conduct ablative analysis for pursueing better corpus design.
+These corpora will enable us investigate what aspects are important for acquring robust deductive reasoning ability.
