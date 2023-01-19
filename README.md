@@ -4,7 +4,7 @@ This is the repository for FLD corpus.
 ## Introduction
 FLD (**F**ormal **L**ogic **D**eduction) is synthetic a corpus for teaching language models deductive reasoning.
 FLD corpus includes synthetically generated multistep deductive proofs written in natural languages.
-Each deductive proof (dis-)proves a hypothesis by applying deduction rules multiple times to a given set of facts.
+Each deductive proof (dis)proves a hypothesis by applying deduction rules multiple times to a given set of facts.
 
 ## Data Format
 FLD instance is composed of a hypothesis, a set of facts ("context"), possible proofs ("proofs"), an answer label ("answer"), and other meta properties, as follows:
