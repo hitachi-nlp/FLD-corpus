@@ -34,7 +34,7 @@ FLD instance is composed of a hypothesis, a set of facts ("context"), possible p
 This format is similar to the one used in a [previous study](https://github.com/princeton-nlp/NLProofS).
 
 ## Current Release
-Datasets can be found [here](...), and their specs are as follows:
+Datasets can be found [here](https://drive.google.com/file/d/1qa-9c0skuZ_DvqqAM1uHQW-WzGinPCsv/view?usp=sharing), and their specs are as follows:
 
 | corpus name | proof tree depth distribution | arguments (deduction rules) | proof tree depth | dataset size (train/valid/test) |
 |-------------|-------------------------------|-----------------------------|------------------|---------------------------------|
