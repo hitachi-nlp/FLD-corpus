@@ -51,3 +51,6 @@ See the paper for other details.
 
 In the future, we will release various corpora which differ in design aspects, such as the number of distractors, the abundancy of linguistic templates, and the complexity of logical formulas.
 These corpora will enable us investigate what aspects are important for acquring robust deductive reasoning ability.
+
+## Citation
+Wait for NLP(2023) proceedings to be opened.
