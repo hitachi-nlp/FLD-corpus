@@ -53,4 +53,4 @@ In the future, we will release various corpora which differ in design aspects, s
 These corpora will enable us investigate what aspects are important for acquring robust deductive reasoning ability.
 
 ## Citation
-Wait for NLP(2023) proceedings to be opened.
+Wait for [NLP2023](https://www.anlp.jp/nlp2023/) proceedings to be opened.
