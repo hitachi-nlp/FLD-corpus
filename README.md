@@ -34,4 +34,4 @@ FLD instance is composed of a hypothesis, a set of facts ("context"), possible p
 This format is similar to the one used in a [previous study](https://github.com/princeton-nlp/NLProofS).
 
 ## Current Release
-See the supplementary materials.
+(for reviewers) See the supplementary materials.
