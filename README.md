@@ -1,5 +1,5 @@
 # FLD Corpus
-This is one of the official repositories of the paper [Learning Deductive Reasoning from Synthetic Corpus based on Formal Logic](TODO).
+This is one of the official repositories of the paper [Learning Deductive Reasoning from Synthetic Corpus based on Formal Logic](#).
 This repository includes the released corpora.  
 
 See [the entry-point repository](https://github.com/hitachi-nlp/FLD.git) for the other repositories used in the paper.
@@ -8,7 +8,7 @@ See [the entry-point repository](https://github.com/hitachi-nlp/FLD.git) for the
 * This is version 2.0 of FLD corpora with improved natural language template quality, logical proof consistency, and harder distractors. These corpora are slightly different from those used in the paper.
 
 ## Corpora
-Download from [Here](TODO).
+Download from [Here](https://drive.google.com/file/d/16XpDBslr56Qdm41CqApI8MYtPky1swKU/view?usp=sharing).
 
 ## Prover performance
 A prover trained for 20000 steps on each corpus will perform as follows:
