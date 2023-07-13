@@ -8,22 +8,17 @@ See [the entry-point repository](https://github.com/hitachi-nlp/FLD) for the oth
 * This is version 2.0 of FLD corpora with improved natural language template quality, logical proof consistency, and harder distractors. These corpora are slightly different from those used in the paper.
 
 ## Corpora
-Download from [Here](TODO). The [prover](https://github.com/hitachi-nlp/FLD-prover.git) performance on each corpus is the following.
+Download from [Here](TODO).
 
-### FLD.3
-|             | strct.D-all.answer_accuracy | strct.D-all.proof_accuracy | extr_stps.D-all.answer_accuracy | extr_stps.D-all.proof_accuracy |
-|-------------|-----------------------------|----------------------------|---------------------------------|--------------------------------|
-| 5000 steps  | TODO                          | TODO                         | TODO                              | TODO                             |
-| 20000 steps | TODO                          | TODO                         | TODO                              | TODO                             |
+## Prover performance
+A prover trained for 20000 steps on each corpus will perform as follows:
 
+| corpus           | extr_stps.D-all.proof_accuracy | strct.D-all.answer_accuracy | D-all.answer_accuracy |
+|------------------|--------------------------------|-----------------------------|-----------------------|
+| FLD.3 (**FLD**)  | 86.4                           | 72.8                        | 94.6                  |
+| FLD.4 (**FLD★**) | 60.4                           | 38.0                        | 73.2                  |
 
-### FLD.4
-|             | strct.D-all.answer_accuracy | strct.D-all.proof_accuracy | extr_stps.D-all.answer_accuracy | extr_stps.D-all.proof_accuracy |
-|-------------|-----------------------------|----------------------------|---------------------------------|--------------------------------|
-| 5000 steps  | TODO                          | TODO                         | TODO                              | TODO                             |
-| 20000 steps | TODO                          | TODO                         | TODO                              | TODO                             |
-
-
+See [the prover repository](https://github.com/hitachi-nlp/FLD-prover.git) for more details.
 
 ## Citation
 ```bibtex
