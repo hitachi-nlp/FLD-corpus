@@ -8,7 +8,12 @@ See [the entry-point repository](https://github.com/hitachi-nlp/FLD.git) for the
 * This is version 2.0 of FLD corpora with improved natural language template quality, logical proof consistency, and harder distractors. These corpora are slightly different from those used in the paper.
 
 ## Corpora
-Download from [Here](https://drive.google.com/file/d/1onkrepMkzHAjRSlI0E7Mcp-4efo2M3dc/view?usp=sharing).
+The corpora are released on the huggingface dataset hub. 
+Currently, we have two types of corpora:
+* [FLD.3 (**FLD**)](https://huggingface.co/datasets/hitachi-nlp/FLD.3), which includes lower depth proof trees.
+* [FLD.4 (**FLD★**](https://huggingface.co/datasets/hitachi-nlp/FLD.4), which includes higer depth proof trees.
+
+Or, you can manually [download](https://drive.google.com/file/d/1onkrepMkzHAjRSlI0E7Mcp-4efo2M3dc/view?usp=sharing) the source corpora files.
 
 ## Citation
 ```bibtex
