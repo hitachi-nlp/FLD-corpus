@@ -9,11 +9,11 @@ See [the entry-point repository](https://github.com/hitachi-nlp/FLD.git) for the
 
 ## Corpora
 The corpora are released on the huggingface dataset hub. 
-Currently, we have two types of corpora:
-* [FLD.3 (**FLD**)](https://huggingface.co/datasets/hitachi-nlp/FLD.3), which includes lower depth proof trees.
-* [FLD.4 (**FLD★**)](https://huggingface.co/datasets/hitachi-nlp/FLD.4), which includes hihger depth proof trees.
+Currently, we have released two corpora:
+* [**FLD** (FLD.3)](https://huggingface.co/datasets/hitachi-nlp/FLD.v2), which includes lower depth proof trees.
+* [**FLD★**(FLD.4) ](https://huggingface.co/datasets/hitachi-nlp/FLD-star.v2), which includes hihger depth proof trees.
 
-Or, you can manually [download](https://drive.google.com/file/d/1onkrepMkzHAjRSlI0E7Mcp-4efo2M3dc/view?usp=sharing) the source corpora files.
+Or, you can manually download [the source files](https://drive.google.com/file/d/1BcI8lp3ye6vxOoRmcd_ORawytWQnH2yO/view?usp=sharing).
 
 ## Citation
 ```bibtex
