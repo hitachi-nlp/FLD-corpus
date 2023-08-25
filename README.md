@@ -18,7 +18,7 @@ $ pip install datasets
 2. Then, load the corpora from python scripts as:
 ```python
 from datasets import load_dataset
-FLD = load_dataset('FLD.v2')
+FLD = load_dataset('hitachi-nlp/FLD.v2')
 (...)
 ```
 
