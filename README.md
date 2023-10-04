@@ -18,13 +18,14 @@ $ pip install datasets
 2. Then, load the corpora from python scripts as:
 ```python
 from datasets import load_dataset
-FLD = load_dataset('hitachi-nlp/FLD.v2')
+FLD = load_dataset('hitachi-nlp/FLD.v2', name='default')
+FLD_star = load_dataset('hitachi-nlp/FLD.v2', name='star')
 (...)
 ```
 
 Currently, we have released two corpora:
-* [**FLD** (FLD.3)](https://huggingface.co/datasets/hitachi-nlp/FLD.v2), which includes lower depth proof trees.
-* [**FLD★**(FLD.4) ](https://huggingface.co/datasets/hitachi-nlp/FLD-star.v2), which includes higher depth proof trees.
+* [**FLD** (FLD.3)](https://huggingface.co/datasets/hitachi-nlp/FLD.v2/viewer/default/train), which includes lower depth proof trees.
+* [**FLD★**(FLD.4) ](https://huggingface.co/datasets/hitachi-nlp/FLD.v2/viewer/star/train), which includes higher depth proof trees.
 
 ### Download the source files
 Alternatively, you can manually download [the source files](https://drive.google.com/file/d/1BcI8lp3ye6vxOoRmcd_ORawytWQnH2yO/view?usp=sharing).
