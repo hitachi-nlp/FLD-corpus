@@ -47,12 +47,9 @@ An example of deduction in our dataset is conceptually illustrated in the figure
 That is, given a set of facts and a hypothesis, a model must generate a proof sequence and determine an answer marker (proved, disproved, or unknown).
 
 ### Schema
-Our example contains several fields.
-
-The most important ones include:
+Our example contains several fields. The most important ones include:
 * `prompt_serial`: A serialization of facts and a hypothesis used as input for a language model.
 * `proof_serial`: A serialization of the proof and answer marker used as output for a language model.
 
 These fields can be used to train a causal language model.
-
 For more details, refer to [the language model-based prover](https://github.com/hitachi-nlp/FLD-prover.git).
