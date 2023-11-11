@@ -6,7 +6,7 @@ See [the entry-point repository](https://github.com/hitachi-nlp/FLD.git) about t
 
 
 ## About this release
-This is version 2.0 of FLD corpora. See [the arXiv version of our paper](https://arxiv.org/abs/2308.07336) for details.
+This is version 2.0 of FLD corpora. See [the Appendix.H of our paper](https://arxiv.org/abs/2308.07336) for details.
 
 
 
