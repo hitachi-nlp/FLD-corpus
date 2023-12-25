@@ -36,9 +36,16 @@ An example of deduction in our dataset is conceptually illustrated in the figure
 That is, given a set of facts and a hypothesis, a model must generate a proof sequence and determine an answer marker (proved, disproved, or unknown).
 
 ### Schema
-An example contains several fields. The most important ones include:
-* `prompt_serial`: A serialization of facts and a hypothesis used as input for a language model.
-* `proof_serial`: A serialization of the proof and answer marker used as output for a language model.
+The most primitive fields are:
+* `context`: A set of facts.
+* `hypothesis`: A hypothesis.
+* `proofs`: Gold proofs. Each proof consists of a series of logical steps derived from the facts leading towards the hypothesis. Currently, for each example, we have at most one proof.
+* `world_assump_label`: An answer, which is either `PROVED`, `DISPROVED`, or `UNKNOWN`.
 
-These fields can be used to train a causal language model.
-For more details, refer to [the language model-based prover](https://github.com/hitachi-nlp/FLD-prover.git).
+Additionally, we have preprocessed fields as follows:
+* `prompt_serial`: A serialized representation of the facts and the hypothesis.
+* `proof_serial`: A serialized representation of the proof and answer.
+
+To train or evaluate a Language Model (LM), one can take one of two approaches:
+* Use `prompt_serial` as input and `proof_serial` as output. This will make the LM to generate both the proof and the answer.
+* Use `prompt_serial` as input and `world_assump_label` as output. This will make the LM to generate only the answer.
