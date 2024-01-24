@@ -10,7 +10,7 @@ The English corpora introduced in the [ICML paper](https://arxiv.org/abs/2308.07
 
 Note that these corpora are version 2.0, which is detailed in the Appendix.H of our paper.
 
-For the Japanese corpora (i.e., JFLD corpora), please read [here](./README.jpn.md).
+For the Japanese corpora (i.e., JFLD corpora), please read [here](./README.JFLD.md).
 
 ## How to use the corpora
 First, install the datasets library:
