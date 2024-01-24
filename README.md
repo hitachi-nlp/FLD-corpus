@@ -7,7 +7,8 @@ See [the entry-point repository](https://github.com/hitachi-nlp/FLD.git) about t
 * The English corpora introduced in the [ICML paper](https://arxiv.org/abs/2308.07336):
     * [**FLD** (FLD.3)](https://huggingface.co/datasets/hitachi-nlp/FLD.v2/viewer/default/train)
     * [**FLD★**(FLD.4) ](https://huggingface.co/datasets/hitachi-nlp/FLD.v2/viewer/star/train)
-    Note that these corpora are version 2.0, which is detailed in the Appendix.H of our paper.
+Note that these corpora are version 2.0, which is detailed in the Appendix.H of our paper.
+
 * The Japanese corpora, or **JFLD**, are described [here](./README.JFLD.md).
 
 ## How to use the corpora
