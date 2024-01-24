@@ -3,23 +3,22 @@ This repository includes the released FLD corpora.
 
 See [the entry-point repository](https://github.com/hitachi-nlp/FLD.git) about the whole FLD project.
 
+## Available Corpora
+The English corpora introduced in the [ICML paper](https://arxiv.org/abs/2308.07336) are the followings:
+* [**FLD** (FLD.3)](https://huggingface.co/datasets/hitachi-nlp/FLD.v2/viewer/default/train)
+* [**FLD★**(FLD.4) ](https://huggingface.co/datasets/hitachi-nlp/FLD.v2/viewer/star/train)
 
-## About this release
-This is version 2.0 of FLD corpora. See the Appendix.H of [our paper](https://arxiv.org/abs/2308.07336) for details.
+Note that these corpora are version 2.0, which is detailed in the Appendix.H of our paper.
 
+For the Japanese corpora (i.e., JFLD corpora), please read [here](./README.jpn.md).
 
-## Installation
-You need datasets library to load the corpora:
+## How to use the corpora
+First, install the datasets library:
 ```console
 $ pip install datasets
 ```
 
-## How to use the corpora
-We released two corpora via 🤗 huggingface hub as follows:
-* [**FLD** (FLD.3)](https://huggingface.co/datasets/hitachi-nlp/FLD.v2/viewer/default/train), which includes lower depth proof trees.
-* [**FLD★**(FLD.4) ](https://huggingface.co/datasets/hitachi-nlp/FLD.v2/viewer/star/train), which includes higher depth proof trees.
-
-You can load these corpora as follows:
+Then, you can load the FLD corpora as follows:
 ```python
 from datasets import load_dataset
 FLD = load_dataset('hitachi-nlp/FLD.v2', name='default')
@@ -37,7 +36,7 @@ That is, given a set of facts and a hypothesis, a model must generate a proof se
 
 ### Schema
 The most primitive fields are:
-* `context`: A set of facts.
+* `context` (or `facts` in the latest version): A set of facts.
 * `hypothesis`: A hypothesis.
 * `proofs`: Gold proofs. Each proof consists of a series of logical steps derived from the facts leading towards the hypothesis. Currently, for each example, we have at most one proof.
 * `world_assump_label`: An answer, which is either `PROVED`, `DISPROVED`, or `UNKNOWN`.
