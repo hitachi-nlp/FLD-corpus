@@ -4,7 +4,7 @@ This repository includes the released FLD corpora.
 See [the entry-point repository](https://github.com/hitachi-nlp/FLD.git) about the whole FLD project.
 
 ## Available Corpora
-* The English corpora introduced in the [ICML paper](https://arxiv.org/abs/2308.07336):
+* The English corpora introduced in the ICML paper are:
     * [**FLD** (FLD.3)](https://huggingface.co/datasets/hitachi-nlp/FLD.v2/viewer/default/train)
     * [**FLD★**(FLD.4) ](https://huggingface.co/datasets/hitachi-nlp/FLD.v2/viewer/star/train)
 
