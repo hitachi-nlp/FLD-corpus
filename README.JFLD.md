@@ -26,9 +26,10 @@
 ## What does the dataset example look like?
 
 `JFLD_punipuni_monster`のサンプルはこんな感じです:
+
 ![deduction_example](./images/JFLD_punipuni_monster.0.png)
 
-スキーマは[こちら](./README.md#Schema)を参照してください．
+スキーマは[英語版の説明](./README.md#Schema)で確認してください．
 
 
 
