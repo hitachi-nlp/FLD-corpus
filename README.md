@@ -15,7 +15,7 @@ Note that these corpora are version 2.0, which is detailed in the Appendix.H of 
 ## How to use the corpora
 First, install the datasets library:
 ```console
-$ pip install datasets
+pip install datasets
 ```
 
 Then, you can load the FLD corpora as follows:
