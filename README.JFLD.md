@@ -33,7 +33,10 @@
 
 
 ## LLMの性能評価
-TODO
+* (TBD) JFLD
+* JFLD_NLP_2024_proceeding_reproduction
+    - ![proof_accuracy.JFLD_NLP_2024_proceeding_reproduction](./images/proof_accuracy.JFLD_NLP_2024_proceeding_reproduction.PNG)
+* (TBD) JFLD_punipuni_monster
 
 
 
