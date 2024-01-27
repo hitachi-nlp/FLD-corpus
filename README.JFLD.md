@@ -1,4 +1,6 @@
-# Japanese Formal Logic Deduction Corpus
+# Japanese Formal Logic Deduction
+日本語の演繹推論コーパス**JFLD** (**J**anese **F**ormal **L**ogic **D**eduction)をプレ公開します．
+言語処理学会2024で発表予定です．
 
 
 
