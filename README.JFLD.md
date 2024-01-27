@@ -33,18 +33,26 @@
 
 
 ## LLMの性能評価
-TODO
+* (TBD) JFLD
+* JFLD_NLP_2024_proceeding_reproduction
+    - ![proof_accuracy.JFLD_NLP_2024_proceeding_reproduction](./images/proof_accuracy.JFLD_NLP_2024_proceeding_reproduction.PNG)
+* (TBD) JFLD_punipuni_monster
 
 
 
 
 ## JFLDのサンプルってどんな感じ？
+JFLDのサンプルは，演繹推論を表したサンプルです．
+演繹推論では，与えられた事実(`facts`)を基に，与えられた仮説(`hypothesis`)を証明あるいは反証するための論理ステップ(`gold proof`)を生成します．
+詳しくは，[英語版の説明](./README.md#What_does_the_dataset_example_look_like?)で確認してください．
 
-`JFLD_punipuni_monster`のサンプルはこんな感じです:
+`JFLD_punipuni_monster`に含まれる演繹推論サンプルは以下のような感じです:
 
 ![deduction_example](./images/JFLD_punipuni_monster.0.png)
 
-スキーマは[英語版の説明](./README.md#Schema)で確認してください．
+
+
+
 
 
 

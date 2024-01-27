@@ -27,16 +27,17 @@ FLD_star = load_dataset('hitachi-nlp/FLD.v2', name='star')
 
 ## What does the dataset example look like?
 
-### Overview
-An example of deduction in our dataset is conceptually illustrated in the figure below:
+### Concept
+An example of deduction example in our dataset is conceptually illustrated in the figure below:
 
 ![deduction_example](./images/deduction_example_GPT4.png)
 
 That is, given a set of facts and a hypothesis, a model must generate a proof sequence and determine an answer marker (proved, disproved, or unknown).
 
 ### Schema
-The most primitive fields are:
-* `context` (or `facts` in the latest version): A set of facts.
+The actual schema can be viewed on [the huggingface hub](https://huggingface.co/datasets/hitachi-nlp/FLD.v2/viewer/default/train).
+The most important fields are:
+* `context` (or `facts` in the later version of corpora): A set of facts.
 * `hypothesis`: A hypothesis.
 * `proofs`: Gold proofs. Each proof consists of a series of logical steps derived from the facts leading towards the hypothesis. Currently, for each example, we have at most one proof.
 * `world_assump_label`: An answer, which is either `PROVED`, `DISPROVED`, or `UNKNOWN`.
