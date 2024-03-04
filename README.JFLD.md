@@ -1,6 +1,6 @@
 # Japanese Formal Logic Deduction
 日本語の演繹推論コーパス **JFLD** (**J**anese **F**ormal **L**ogic **D**eduction)をプレ公開します．
-言語処理学会2024で発表予定です．
+言語処理学会2024・LREC-COLING2024で発表予定です．
 
 ICML2023の論文 [Learning Deductive Reasoning from Synthetic Corpus based on Formal Logic](https://arxiv.org/abs/2308.07336) で公開した英語の演繹推論コーパスを，日本語化したものです．
 
@@ -69,6 +69,13 @@ JFLDのサンプルは，演繹推論を表したサンプルです．
 
 ## Citation
 ```bibtex
+@inproceedings{morishita2024jfld,
+  title={JFLD: A Japanese Benchmark for Deductive Reasoning based on Formal Logic},
+  author={Morishita, Terufumi and Yamaguchi, Atsuki and Morio, Gaku and Hikaru, Tomonari and Osamu Imaichi and Sogawa, Yasuhiro},
+  booktitle={Proceedings of the Joint International Conference on Computational Linguistics, Language Resources and Evaluation},
+  year={2024}
+}
+
 @article{morishita_2024_NLP_JFLD,
   title={日本語論理推論ベンチマークJFLDの提案},
   author={森下皓文 and 山口篤季 and 森尾学 and 角掛正弥 and 友成光 and 今一修, and 十河泰弘},
