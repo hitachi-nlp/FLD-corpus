@@ -1,5 +1,5 @@
 # Japanese Formal Logic Deduction
-日本語の演繹推論コーパス **JFLD** (**J**anese **F**ormal **L**ogic **D**eduction)をプレ公開します．
+日本語の演繹推論コーパス **JFLD** (**J**apanese **F**ormal **L**ogic **D**eduction)をプレ公開します．
 言語処理学会2024・LREC-COLING2024で発表予定です．
 
 ICML2023の論文 [Learning Deductive Reasoning from Synthetic Corpus based on Formal Logic](https://arxiv.org/abs/2308.07336) で公開した英語の演繹推論コーパスを，日本語化したものです．
