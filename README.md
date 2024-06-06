@@ -49,3 +49,5 @@ Additionally, we have preprocessed fields as follows:
 To train or evaluate a Language Model (LM), one can take one of two approaches:
 * Use `prompt_serial` as input and `proof_serial` as output. This will make the LM to generate both the proof and the answer.
 * Use `prompt_serial` as input and `world_assump_label` as output. This will make the LM to generate only the answer.
+
+Further, we have "logical formula" versions of the fields, such as `prompt_serial_formula`, which can be used to evaluate LLMs' pure logical reasoning capabilities within the domain of logical formulas, rather than natural language.
