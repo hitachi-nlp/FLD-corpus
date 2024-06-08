@@ -37,7 +37,7 @@ JFLDのサンプルは，演繹推論を表したサンプルです．
         * 予稿版と正式版の違いは日本語表現の自然さ程度にすぎず，それは論理の本質には影響しない(*)からです．
 * [JFLD_punipuni_monster](https://huggingface.co/datasets/hitachi-nlp/JFLD_punipuni_monster)
     * おまけ版です．
-    * 基本的に正式版と同じですが，「ぷにぷにLv.65は赤い」といった事実のみを用いています．事実のパターンが限られる反面，人間にとってはより読みやすいと思います．
+    * 基本的に正式版と同じですが，「ぷにぷにLv.65は赤い」といったような事実のみを用いています．事実のパターンが限られますが，人間にとってはより読みやすいと思います．
 * [JFLD_NLP_2024_proceeding_reproduction](https://huggingface.co/datasets/hitachi-nlp/JFLD_NLP_2024_proceeding_reproduction)
     * 予稿版です．すなわち，言語処理学会の予稿で用いられたコーパスです．再現性のために残しておきます．
 
