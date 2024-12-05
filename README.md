@@ -4,13 +4,12 @@ This repository includes the released FLD corpora.
 See [the entry-point repository](https://github.com/hitachi-nlp/FLD.git) about the whole FLD project.
 
 ## Available Corpora
-* The English corpora introduced in the ICML paper are:
+* **(NEW!)** NeurIPS(2024): [**FLDx2** (Formal Logic Deduction Diverse)](https://huggingface.co/datasets/hitachi-nlp/FLDx2), which is the most diverse version of the FLD corpora.
+* LREC-COLING (2024): The Japanese corpora, or **JFLD**, described [here](./README.JFLD.md).
+* ICML(2023): The original FLD corpora:
     * [**FLD** (FLD.3)](https://huggingface.co/datasets/hitachi-nlp/FLD.v2/viewer/default/train)
     * [**FLD★**(FLD.4) ](https://huggingface.co/datasets/hitachi-nlp/FLD.v2/viewer/star/train)
-
-Note that these corpora are version 2.0, which is detailed in the Appendix.H of our paper.
-
-* The Japanese corpora, or **JFLD**, are described [here](./README.JFLD.md).
+    Note that these corpora are version 2.0, which is detailed in the Appendix.H of our paper.
 
 ## How to use the corpora
 First, install the datasets library:
@@ -21,8 +20,7 @@ pip install datasets
 Then, you can load the FLD corpora as follows:
 ```python
 from datasets import load_dataset
-FLD = load_dataset('hitachi-nlp/FLD.v2', name='default')
-FLD_star = load_dataset('hitachi-nlp/FLD.v2', name='star')
+FLD = load_dataset('hitachi-nlp/FLDx2', name='default')
 ```
 
 ## What does the dataset example look like?
@@ -35,19 +33,17 @@ An example of deduction example in our dataset is conceptually illustrated in th
 That is, given a set of facts and a hypothesis, a model must generate a proof sequence and determine an answer marker (proved, disproved, or unknown).
 
 ### Schema
-The actual schema can be viewed on [the huggingface hub](https://huggingface.co/datasets/hitachi-nlp/FLD.v2/viewer/default/train).
+
 The most important fields are:
 * `context` (or `facts` in the later version of corpora): A set of facts.
 * `hypothesis`: A hypothesis.
 * `proofs`: Gold proofs. Each proof consists of a series of logical steps derived from the facts leading towards the hypothesis. Currently, for each example, we have at most one proof.
 * `world_assump_label`: An answer, which is either `PROVED`, `DISPROVED`, or `UNKNOWN`.
 
-Additionally, we have preprocessed fields as follows:
-* `prompt_serial`: A serialized representation of the facts and the hypothesis.
-* `proof_serial`: A serialized representation of the proof and answer.
+To train an LLM:
+* Use `prompt_serial` for the prompt, which is the serialized representation of the facts and the hypothesis.
+* Use `proof_serial` for the output to be generated, which is the serialized representation of the proof and answer.
+    - Note that, for the FLDx2 corpus, `proof_serial` sometimes includes both the proof and answer, and sometimes only the answer, to work as augmentation.
+For more about the training, see [the training repository](https://github.com/hitachi-nlp/FLD-prover).
 
-To train or evaluate a Language Model (LM), one can take one of two approaches:
-* Use `prompt_serial` as input and `proof_serial` as output. This will make the LM to generate both the proof and the answer.
-* Use `prompt_serial` as input and `world_assump_label` as output. This will make the LM to generate only the answer.
-
-Further, we have "logical formula" versions of the fields, such as `prompt_serial_formula`, which can be used to evaluate LLMs' pure logical reasoning capabilities within the domain of logical formulas, rather than natural language.
+The actual schema can be viewed on [the huggingface hub](https://huggingface.co/datasets/hitachi-nlp/FLDx2).
