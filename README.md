@@ -6,10 +6,9 @@ See [the entry-point repository](https://github.com/hitachi-nlp/FLD.git) about t
 ## Available Corpora
 * **(NEW!)** NeurIPS(2024): [**FLDx2** (Formal Logic Deduction Diverse)](https://huggingface.co/datasets/hitachi-nlp/FLDx2), which is the most diverse version of the FLD corpora.
 * LREC-COLING (2024): The Japanese corpora, or **JFLD**, described [here](./README.JFLD.md).
-* ICML(2023): The original FLD corpora:
+* ICML(2023): The first FLD corpora (of version 2.0, described in the Appendix.H):
     * [**FLD** (FLD.3)](https://huggingface.co/datasets/hitachi-nlp/FLD.v2/viewer/default/train)
     * [**FLD★**(FLD.4) ](https://huggingface.co/datasets/hitachi-nlp/FLD.v2/viewer/star/train)
-    Note that these corpora are version 2.0, which is detailed in the Appendix.H of our paper.
 
 ## How to use the corpora
 First, install the datasets library:
@@ -43,7 +42,8 @@ The most important fields are:
 To train an LLM:
 * Use `prompt_serial` for the prompt, which is the serialized representation of the facts and the hypothesis.
 * Use `proof_serial` for the output to be generated, which is the serialized representation of the proof and answer.
-    - Note that, for the FLDx2 corpus, `proof_serial` sometimes includes both the proof and answer, and sometimes only the answer, to work as augmentation.
+    - Note that, for the FLDx2 corpus, `proof_serial` sometimes includes both the proof and answer, and sometimes only the answer, working as a sort of augmentation.
+
 For more about the training, see [the training repository](https://github.com/hitachi-nlp/FLD-prover).
 
 The actual schema can be viewed on [the huggingface hub](https://huggingface.co/datasets/hitachi-nlp/FLDx2).
