@@ -4,11 +4,10 @@ This repository includes the released FLD corpora.
 See [the entry-point repository](https://github.com/hitachi-nlp/FLD.git) about the whole FLD project.
 
 ## Available Corpora
-* **(NEW!)** NeurIPS(2024): [**FLDx2** (Formal Logic Deduction Diverse)](https://huggingface.co/datasets/hitachi-nlp/FLDx2), which is the most diverse version of the FLD corpora.
-* LREC-COLING (2024): The Japanese corpora, or **JFLD**, described [here](./README.JFLD.md).
-* ICML(2023): The first FLD corpora (of version 2.0, described in the Appendix.H):
-    * [**FLD** (FLD.3)](https://huggingface.co/datasets/hitachi-nlp/FLD.v2/viewer/default/train)
-    * [**FLD★**(FLD.4) ](https://huggingface.co/datasets/hitachi-nlp/FLD.v2/viewer/star/train)
+* **(NEW!)** **[FLDx2 (Formal Logic Deduction Diverse)](https://huggingface.co/datasets/hitachi-nlp/FLDx2), our newest and the most advanced corpus**, which substantially improves the reasoning capability of LLMs. Published alongside [our NeurIPS 2024 paper](https://arxiv.org/abs/2411.12498).
+* JFLD, the Japanese version of FLD, described [here](./README.JFLD.md). Published alongside [our LREC-COLING 2024 paper](https://aclanthology.org/2024.lrec-main.832/).
+* The first FLD corpora, [FLD (FLD.3)](https://huggingface.co/datasets/hitachi-nlp/FLD.v2/viewer/default/train) and [FLD★ (FLD.4) ](https://huggingface.co/datasets/hitachi-nlp/FLD.v2/viewer/star/train), published alongside [our ICML 2023 paper](https://arxiv.org/abs/2308.07336).
+    * Note that these are version 2.0, described in the Appendix.H.
 
 ## How to use the corpora
 First, install the datasets library:
